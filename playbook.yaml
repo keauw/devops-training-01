@@ -1,0 +1,7 @@
+- name: play1
+  hosts: all
+  tasks:
+    - name: print hostname
+      debug:
+        msg: the hostname is {{ ansible_facts.hostname }}
+
